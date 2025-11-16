@@ -1,8 +1,8 @@
 export const repoConfig = {
   /** GitHub username or org that hosts this repository */
-  owner: 'YOUR_GITHUB_USERNAME',
+  owner: 'Ker102',
   /** Repository name */
-  repo: 'YOUR_REPOSITORY_NAME',
+  repo: 'n8n-ai-automation-workflow-atlas',
   /** Branch that contains the workflows directory */
   branch: 'main',
 };
