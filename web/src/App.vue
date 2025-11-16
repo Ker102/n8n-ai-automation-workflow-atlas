@@ -106,6 +106,25 @@ onMounted(fetchManifest);
       </section>
     </header>
 
+    <section class="companion-card">
+      <div>
+        <p class="companion-kicker">Need an AI co-pilot?</p>
+        <h2>Kaelux Automate</h2>
+        <p>
+          A custom n8n build with an integrated LLM that writes workflows from prompts.
+          Use it alongside this atlas to brainstorm, scaffold, and refine automations faster.
+        </p>
+      </div>
+      <a
+        class="companion-link"
+        href="https://github.com/Ker102/Kaelux-Automate"
+        target="_blank"
+        rel="noopener"
+      >
+        Explore Kaelux Automate →
+      </a>
+    </section>
+
     <section v-if="configWarning" class="config-alert">
       <p>
         Configure your GitHub owner/repo inside <code>web/src/config.js</code> so download links

@@ -61,6 +61,9 @@ workflows/
 └── synapse-pro-ops/           # ProfSynapse production automations
 ```
 
+## 🔥 Companion Project: Kaelux Automate
+Looking for an AI co-pilot that writes n8n workflows from prompts? Check out [**Kaelux Automate**](https://github.com/Ker102/Kaelux-Automate)—a custom n8n build with an LLM tuned specifically for workflow authoring, scaffolding, and iteration. Pair Kaelux with this atlas to brainstorm flows with AI and then import/extend the generated JSON templates here.
+
 ## 🚀 Getting Started (Even If You're New to GitHub)
 Pick whichever flow feels easiest—each ends with a ready-to-import JSON file inside n8n.
 
