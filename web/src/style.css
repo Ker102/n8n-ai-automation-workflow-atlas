@@ -61,6 +61,54 @@ body {
   margin-bottom: 0.2rem;
 }
 
+.hero {
+  position: relative;
+}
+
+.repo-actions {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.repo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid #e2e8f0;
+}
+
+.repo-btn:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.repo-btn svg {
+  color: #64748b;
+}
+
+.repo-btn:hover svg {
+  color: #334155;
+}
+
+@media (max-width: 640px) {
+  .repo-actions {
+    position: static;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+}
+
 .stats-grid {
   margin-top: 1.5rem;
   display: grid;
