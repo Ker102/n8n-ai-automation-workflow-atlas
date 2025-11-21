@@ -8,6 +8,9 @@ const errorMessage = ref('');
 const manifest = ref(null);
 const searchTerm = ref('');
 const selectedCategory = ref('all');
+const selectedComplexity = ref('all');
+const selectedIntegration = ref('all');
+const selectedCredential = ref('all');
 
 const manifestUrl = `${import.meta.env.BASE_URL}workflows.json`;
 
@@ -34,17 +37,53 @@ const categoryFilters = computed(() => {
   return [{ id: 'all', label: `All (${formatNumber(manifest.value?.totalWorkflows)})` }, ...list];
 });
 
+const uniqueComplexities = computed(() => {
+  const set = new Set();
+  categories.value.forEach((c) => c.workflows.forEach((w) => {
+    if (w.complexity) set.add(w.complexity);
+  }));
+  return Array.from(set).sort();
+});
+
+const uniqueIntegrations = computed(() => {
+  const set = new Set();
+  categories.value.forEach((c) => c.workflows.forEach((w) => {
+    w.integrations?.forEach((i) => set.add(i));
+  }));
+  return Array.from(set).sort();
+});
+
+const uniqueCredentials = computed(() => {
+  const set = new Set();
+  categories.value.forEach((c) => c.workflows.forEach((w) => {
+    w.credentials?.forEach((c) => set.add(c));
+  }));
+  return Array.from(set).sort();
+});
+
 const filteredCategories = computed(() => {
   const query = normalizedSearch.value;
   return categories.value
     .filter((category) => selectedCategory.value === 'all' || category.id === selectedCategory.value)
     .map((category) => {
-      const workflows = !query
+      const workflows = !query && selectedComplexity.value === 'all' && selectedIntegration.value === 'all' && selectedCredential.value === 'all'
         ? category.workflows
         : category.workflows.filter((workflow) => {
+            // Search Term
             const nameMatch = workflow.name.toLowerCase().includes(query);
             const fileMatch = workflow.fileName.toLowerCase().includes(query);
-            return nameMatch || fileMatch;
+            if (query && !nameMatch && !fileMatch) return false;
+
+            // Complexity
+            if (selectedComplexity.value !== 'all' && workflow.complexity !== selectedComplexity.value) return false;
+
+            // Integration
+            if (selectedIntegration.value !== 'all' && !workflow.integrations?.includes(selectedIntegration.value)) return false;
+
+            // Credential
+            if (selectedCredential.value !== 'all' && !workflow.credentials?.includes(selectedCredential.value)) return false;
+
+            return true;
           });
       return { ...category, workflows };
     })
@@ -142,6 +181,23 @@ onMounted(fetchManifest);
         />
       </label>
 
+      <div class="filter-row">
+        <select v-model="selectedComplexity" class="filter-select">
+          <option value="all">Any Complexity</option>
+          <option v-for="c in uniqueComplexities" :key="c" :value="c">{{ c }}</option>
+        </select>
+
+        <select v-model="selectedIntegration" class="filter-select">
+          <option value="all">Any Integration</option>
+          <option v-for="i in uniqueIntegrations" :key="i" :value="i">{{ i }}</option>
+        </select>
+
+        <select v-model="selectedCredential" class="filter-select">
+          <option value="all">Any Credential</option>
+          <option v-for="c in uniqueCredentials" :key="c" :value="c">{{ c }}</option>
+        </select>
+      </div>
+
       <div class="chip-row">
         <button
           v-for="chip in categoryFilters"
@@ -188,6 +244,11 @@ onMounted(fetchManifest);
                 <div class="workflow-meta">
                   <strong>{{ workflow.name }}</strong>
                   <span class="path">{{ workflow.relativePath }}</span>
+                  <div class="tags">
+                    <span v-if="workflow.complexity" :class="['badge', workflow.complexity]">{{ workflow.complexity }}</span>
+                    <span v-for="int in workflow.integrations?.slice(0, 3)" :key="int" class="badge integration">{{ int }}</span>
+                    <span v-if="workflow.integrations?.length > 3" class="badge more">+{{ workflow.integrations.length - 3 }}</span>
+                  </div>
                 </div>
                 <div class="workflow-actions">
                   <span class="size">{{ formatBytes(workflow.sizeBytes) }}</span>
