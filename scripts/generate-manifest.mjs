@@ -8,6 +8,14 @@ const WORKFLOWS_DIR = path.join(ROOT, 'workflows');
 const OUTPUT_FILE = path.join(ROOT, 'web/public/workflows.json');
 
 const COLLECTION_META = {
+  'synthetic': {
+    label: 'Synthetic Generated',
+    description: 'AI-generated workflows using 11 archetype blueprints with combinatorial node swapping.'
+  },
+  'external': {
+    label: 'External Community',
+    description: 'Cleaned and validated workflows from the HuggingFace community dataset.'
+  },
   'community-mega-pack': {
     label: 'Community Mega Pack',
     description: 'General-purpose automations covering marketing, ops, CRM, enrichment, and more.'
