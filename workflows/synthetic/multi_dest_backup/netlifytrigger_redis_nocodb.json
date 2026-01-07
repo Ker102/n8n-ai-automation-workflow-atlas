@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "name": "Trigger",
+      "type": "n8n-nodes-base.netlifyTrigger",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Primary DB",
+      "type": "n8n-nodes-base.redis",
+      "position": [
+        200,
+        0
+      ],
+      "parameters": {
+        "operation": "insert"
+      }
+    },
+    {
+      "name": "Secondary DB",
+      "type": "n8n-nodes-base.nocoDb",
+      "position": [
+        400,
+        0
+      ],
+      "parameters": {
+        "operation": "append"
+      }
+    }
+  ],
+  "connections": {
+    "Trigger": {
+      "main": [
+        [
+          {
+            "node": "Primary DB",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Primary DB": {
+      "main": [
+        [
+          {
+            "node": "Secondary DB",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

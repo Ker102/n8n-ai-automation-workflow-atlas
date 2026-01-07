@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "name": "Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Source",
+      "type": "n8n-nodes-base.clickUp",
+      "position": [
+        200,
+        0
+      ],
+      "parameters": {
+        "operation": "getAll"
+      }
+    },
+    {
+      "name": "Destination",
+      "type": "n8n-nodes-base.mondayCom",
+      "position": [
+        400,
+        0
+      ],
+      "parameters": {
+        "operation": "create"
+      }
+    }
+  ],
+  "connections": {
+    "Schedule": {
+      "main": [
+        [
+          {
+            "node": "Source",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Source": {
+      "main": [
+        [
+          {
+            "node": "Destination",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
