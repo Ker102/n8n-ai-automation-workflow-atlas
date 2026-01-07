@@ -36,7 +36,7 @@ All **36,985 workflows** are organized in `/workflows/` by category:
 | Category | Workflows | Path | Description |
 |----------|-----------|------|-------------|
 | **AI Automation Lab** | 1,464 | `workflows/ai-automation-lab/` | AI agents, copilots, RAG, enrichment flows |
-| **Community Mega Pack** | 2,057 | `workflows/community-mega-pack/` | General-purpose automations |
+| **Initial Megapack** | 2,057 | `workflows/initial_megapack/` | General-purpose automations |
 | **External Community** | 24,701 | `workflows/external/` | Cleaned community dataset |
 | **Synthetic Generated** | 8,744 | `workflows/synthetic/` | AI-generated workflow variations |
 | **Box MCP Demos** | 10 | `workflows/box-mcp-demos/` | Box DocGen & metadata workflows |
@@ -87,7 +87,7 @@ For ML training or bulk import, download the complete dataset:
 ```
 workflows/
 ├── ai-automation-lab/        # 1,464 AI & automation workflows
-├── community-mega-pack/      # 2,057 general-purpose workflows
+├── initial_megapack/         # 2,057 general-purpose workflows
 ├── external/                 # 24,701 community workflows
 ├── synthetic/                # 8,744 synthetic variations
 ├── box-mcp-demos/            # 10 Box integration demos

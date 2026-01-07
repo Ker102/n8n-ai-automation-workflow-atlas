@@ -16,8 +16,8 @@ const COLLECTION_META = {
     label: 'External Community',
     description: 'Cleaned and validated workflows from the HuggingFace community dataset.'
   },
-  'community-mega-pack': {
-    label: 'Community Mega Pack',
+  'initial_megapack': {
+    label: 'Initial Megapack',
     description: 'General-purpose automations covering marketing, ops, CRM, enrichment, and more.'
   },
   'ai-automation-lab': {
