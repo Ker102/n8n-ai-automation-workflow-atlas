@@ -44,12 +44,14 @@
       ],
       "parameters": {
         "conditions": {
-          "boolean": [
+          "number": [
             {
-              "value1": true,
-              "value2": "={{$node[\"SplitInBatches\"].context[\"noItemsLeft\"]}}"
+              "value1": "={{$node[\"SplitInBatches\"].context[\"currentRunIndex\"];}}",
+              "value2": 5,
+              "operation": "equal"
             }
-          ]
+          ],
+          "boolean": []
         }
       },
       "typeVersion": 1
@@ -66,7 +68,7 @@
           "string": [
             {
               "name": "Message",
-              "value": "No Items Left"
+              "value": "Loop Ended"
             }
           ]
         },
