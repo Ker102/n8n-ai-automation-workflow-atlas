@@ -6,6 +6,14 @@
 ![Categories](https://img.shields.io/badge/Categories-9-9cf?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Apache%202.0-000?style=for-the-badge)
 
+### Built With
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+
 > **36,985 n8n workflows** — organized by category, ready to download and import into your n8n instance.
 
 ---
@@ -37,7 +45,7 @@ All **36,985 workflows** are organized in `/workflows/` by category:
 |----------|-----------|------|-------------|
 | **AI Automation Lab** | 1,464 | `workflows/ai-automation-lab/` | AI agents, copilots, RAG, enrichment flows |
 | **Initial Megapack** | 2,057 | `workflows/initial_megapack/` | General-purpose automations |
-| **External Community** | 24,701 | `workflows/external/` | Cleaned community dataset |
+| **Community Refined** | 24,701 | `workflows/external/` | Cleaned community dataset |
 | **Synthetic Generated** | 8,744 | `workflows/synthetic/` | AI-generated workflow variations |
 | **Box MCP Demos** | 10 | `workflows/box-mcp-demos/` | Box DocGen & metadata workflows |
 | **Pinecone RAG Kits** | 6 | `workflows/pinecone-rag-kits/` | Vector database starters |
@@ -88,7 +96,7 @@ For ML training or bulk import, download the complete dataset:
 workflows/
 ├── ai-automation-lab/        # 1,464 AI & automation workflows
 ├── initial_megapack/         # 2,057 general-purpose workflows
-├── external/                 # 24,701 community workflows
+├── external/                 # 24,701 community refined workflows
 ├── synthetic/                # 8,744 synthetic variations
 ├── box-mcp-demos/            # 10 Box integration demos
 ├── pinecone-rag-kits/        # 6 RAG starters

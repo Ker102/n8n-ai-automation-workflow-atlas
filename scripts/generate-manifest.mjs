@@ -13,7 +13,7 @@ const COLLECTION_META = {
     description: 'AI-generated workflows using 11 archetype blueprints with combinatorial node swapping.'
   },
   'external': {
-    label: 'External Community',
+    label: 'Community Refined',
     description: 'Cleaned and validated workflows from the HuggingFace community dataset.'
   },
   'initial_megapack': {

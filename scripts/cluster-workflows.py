@@ -13,7 +13,7 @@ from sklearn.preprocessing import normalize
 from collections import Counter
 
 # Configuration
-EMBEDDINGS_FILE = Path(__file__).parent.parent / "embeddings.jsonl"
+EMBEDDINGS_FILE = Path(__file__).parent.parent / "embeddings_together.jsonl"
 OUTPUT_FILE = Path(__file__).parent.parent / "workflow_clusters.json"
 N_CLUSTERS = 25  # Number of semantic categories to discover
 RANDOM_STATE = 42

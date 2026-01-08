@@ -179,6 +179,59 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* GitHub Profile Promo */
+.github-promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #0d1117, #21262d);
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+}
+
+.promo-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.github-icon {
+  color: #f0f6fc;
+  flex-shrink: 0;
+}
+
+.github-promo h3 {
+  margin: 0 0 0.25rem;
+  color: #f0f6fc;
+  font-size: 1.1rem;
+}
+
+.github-promo p {
+  margin: 0;
+  font-size: 0.9rem;
+  max-width: 50ch;
+  opacity: 0.9;
+}
+
+.promo-link {
+  padding: 0.55rem 1.2rem;
+  border-radius: 0.5rem;
+  background: #238636;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.promo-link:hover {
+  background: #2ea043;
+}
+
 .config-alert {
   background: #fff7ed;
   border: 1px solid #fdba74;
