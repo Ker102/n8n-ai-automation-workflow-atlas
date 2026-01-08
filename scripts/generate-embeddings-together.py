@@ -22,7 +22,7 @@ except ImportError:
 # Configuration
 INPUT_FILE = Path(__file__).parent.parent / "n8n_workflows.jsonl"
 OUTPUT_FILE = Path(__file__).parent.parent / "embeddings_together.jsonl"
-MODEL_NAME = "BAAI/bge-large-en-v1.5"  # 1024 dimensions, high quality
+MODEL_NAME = "togethercomputer/m2-bert-80M-32k-retrieval"  # 32k context, great for workflows
 BATCH_SIZE = 50  # Together AI handles larger batches well
 DELAY_BETWEEN_BATCHES = 0.5  # seconds
 
