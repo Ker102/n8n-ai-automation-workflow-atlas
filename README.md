@@ -2,8 +2,9 @@
 
 # 🌌 n8n Automation Atlas
 
-![Workflows](https://img.shields.io/badge/Workflows-36,985-blueviolet?style=for-the-badge)
-![Categories](https://img.shields.io/badge/Categories-9-9cf?style=for-the-badge)
+![Workflows](https://img.shields.io/badge/Workflows-131,648-blueviolet?style=for-the-badge)
+![Categories](https://img.shields.io/badge/Categories-26-9cf?style=for-the-badge)
+![Training Examples](https://img.shields.io/badge/Training%20Data-131k-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Apache%202.0-000?style=for-the-badge)
 
 ### Built With
@@ -21,7 +22,7 @@
 ![Gemini Embedding](https://img.shields.io/badge/Gemini-Embedding--001-4285F4?style=flat-square&logo=google&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini%202.0-Flash-4285F4?style=flat-square&logo=google&logoColor=white)
 
-> **36,985 n8n workflows** — organized by category, ready to download and import into your n8n instance.
+> **131,648 n8n workflows** — the world's largest open-source n8n workflow dataset. Organized by category, labeled for training, ready for RAG and fine-tuning.
 
 ---
 
@@ -32,10 +33,10 @@ Browse, search, filter, and download workflows with one click:
 
 👉 **[Open Workflow Explorer](https://n8n-workflows-36k.vercel.app)**
 
-### Option 2: Browse on GitHub
-Navigate directly to the workflows folder:
+### Option 2: Training Dataset (HuggingFace)
+For AI/ML training with instruction-tuning format:
 
-👉 **[Browse /workflows](https://github.com/Ker102/n8n-workflows-36k/tree/main/workflows)**
+👉 **[Download from HuggingFace](https://huggingface.co/datasets/Ker102/n8n-mega-workflows)**
 
 ### Option 3: Clone Everything
 ```bash
@@ -46,18 +47,20 @@ git clone https://github.com/Ker102/n8n-workflows-36k.git
 
 ## 📂 Workflow Categories
 
-All **36,985 workflows** are organized in `/workflows/` by category:
+All **131,648 workflows** organized across 26 semantic categories:
 
 | Category | Workflows | Path | Description |
 |----------|-----------|------|-------------|
-| **AI Automation Lab** | 1,464 | `workflows/ai-automation-lab/` | AI agents, copilots, RAG, enrichment flows |
+| **AI Agents & Chat** | 7,874 | semantic label | LLM-powered agents and chatbots |
+| **Monitoring & Alerts** | 7,250 | semantic label | System monitoring and notifications |
+| **Calendar & Events** | 7,038 | semantic label | Calendar sync and event automation |
+| **Data Sync & ETL** | 6,634 | semantic label | Data pipelines and transformations |
+| **Scheduling & Triggers** | 6,500 | semantic label | Scheduled jobs and triggers |
+| **AI Automation Lab** | 1,464 | `workflows/ai-automation-lab/` | AI agents, copilots, RAG flows |
+| **Community Refined** | 24,696 | `workflows/external/` | Cleaned community dataset |
+| **Synthetic v2** | 97,000 | `workflows/synthetic_v2/` | Node-swap generated variations |
+| **Synthetic v1** | 8,744 | `workflows/synthetic/` | Original synthetic workflows |
 | **Initial Megapack** | 2,057 | `workflows/initial_megapack/` | General-purpose automations |
-| **Community Refined** | 24,701 | `workflows/external/` | Cleaned community dataset |
-| **Synthetic Generated** | 8,744 | `workflows/synthetic/` | AI-generated workflow variations |
-| **Box MCP Demos** | 10 | `workflows/box-mcp-demos/` | Box DocGen & metadata workflows |
-| **Pinecone RAG Kits** | 6 | `workflows/pinecone-rag-kits/` | Vector database starters |
-| **Synapse Pro Ops** | 2 | `workflows/synapse-pro-ops/` | Production automations |
-| **Self-Hosted AI Starter** | 1 | `workflows/self-hosted-ai-starter/` | n8n AI starter kit |
 
 ---
 
