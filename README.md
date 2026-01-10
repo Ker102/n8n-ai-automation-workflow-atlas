@@ -2,10 +2,10 @@
 
 # 🌌 n8n Automation Atlas
 
-![Workflows](https://img.shields.io/badge/Workflows-131,648-blueviolet?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total%20Workflows-131,648-blueviolet?style=for-the-badge)
+![Importable](https://img.shields.io/badge/Importable-36,985-green?style=for-the-badge)
+![ML Training](https://img.shields.io/badge/ML%20Training-97,000-orange?style=for-the-badge)
 ![Categories](https://img.shields.io/badge/Categories-26-9cf?style=for-the-badge)
-![Training Examples](https://img.shields.io/badge/Training%20Data-131k-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Apache%202.0-000?style=for-the-badge)
 
 ### Built With
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
@@ -22,19 +22,20 @@
 ![Gemini Embedding](https://img.shields.io/badge/Gemini-Embedding--001-4285F4?style=flat-square&logo=google&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini%202.0-Flash-4285F4?style=flat-square&logo=google&logoColor=white)
 
-> **131,648 n8n workflows** — the world's largest open-source n8n workflow dataset. Organized by category, labeled for training, ready for RAG and fine-tuning.
+> **131,648 n8n workflows** — the world's largest open-source n8n workflow dataset.  
+> **36,985 importable** workflows ready for n8n + **97,000 ML training** variations.
 
 ---
 
 ## 🚀 Quick Access
 
 ### Option 1: Workflow Explorer (Recommended)
-Browse, search, filter, and download workflows with one click:
+Browse, search, filter, and download the **36,985 importable** workflows:
 
 👉 **[Open Workflow Explorer](https://n8n-workflows-36k.vercel.app)**
 
 ### Option 2: Training Dataset (HuggingFace)
-For AI/ML training with instruction-tuning format:
+For AI/ML training with instruction-tuning format (**131,648 examples**):
 
 👉 **[Download from HuggingFace](https://huggingface.co/datasets/Ker102/n8n-mega-workflows)**
 
@@ -45,24 +46,29 @@ git clone https://github.com/Ker102/n8n-workflows-36k.git
 
 ---
 
-## 📂 Workflow Categories
+## 📂 Importable Workflows (36,985)
 
-All **131,648 workflows** organized across 26 semantic categories:
+Ready to import into your n8n instance:
 
 | Category | Workflows | Path | Description |
 |----------|-----------|------|-------------|
-| **AI Agents & Chat** | 7,874 | semantic label | LLM-powered agents and chatbots |
-| **Monitoring & Alerts** | 7,250 | semantic label | System monitoring and notifications |
-| **Calendar & Events** | 7,038 | semantic label | Calendar sync and event automation |
-| **Data Sync & ETL** | 6,634 | semantic label | Data pipelines and transformations |
-| **Scheduling & Triggers** | 6,500 | semantic label | Scheduled jobs and triggers |
-| **AI Automation Lab** | 1,464 | `workflows/ai-automation-lab/` | AI agents, copilots, RAG flows |
 | **Community Refined** | 24,696 | `workflows/external/` | Cleaned community dataset |
-| **Synthetic v2** | 97,000 | `workflows/synthetic_v2/` | Node-swap generated variations |
-| **Synthetic v1** | 8,744 | `workflows/synthetic/` | Original synthetic workflows |
+| **Synthetic v1** | 8,744 | `workflows/synthetic/` | AI-generated variations |
 | **Initial Megapack** | 2,057 | `workflows/initial_megapack/` | General-purpose automations |
+| **AI Automation Lab** | 1,464 | `workflows/ai-automation-lab/` | AI agents, copilots, RAG |
+| **+ 4 more** | 24 | various | Box, Pinecone, Synapse demos |
 
 ---
+
+## 🤖 ML Training Workflows (97,000)
+
+Synthetic workflows for training AI models (in `workflows_ml/`):
+
+| Category | Workflows | Description |
+|----------|-----------|-------------|
+| **Synthetic v2** | 97,000 | Node-swap generated variations from 100 archetypes |
+
+> ⚠️ These are **synthetic node-swapped variations** optimized for ML training, not direct n8n import.
 
 ## 📥 How to Import a Workflow
 
