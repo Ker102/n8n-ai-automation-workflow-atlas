@@ -4,27 +4,30 @@
 
 ![Total](https://img.shields.io/badge/Total%20Workflows-131,648-blueviolet?style=for-the-badge)
 ![Importable](https://img.shields.io/badge/Importable-36,985-green?style=for-the-badge)
-![ML Training](https://img.shields.io/badge/ML%20Training-97,000-orange?style=for-the-badge)
-![Categories](https://img.shields.io/badge/Categories-26-9cf?style=for-the-badge)
+![Vectors](https://img.shields.io/badge/RAG%20Vectors-36,166-FF4F64?style=for-the-badge)
+![Fine-Tuning](https://img.shields.io/badge/Fine--Tuning-In%20Progress-orange?style=for-the-badge)
 
-### Built With
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+### 🔧 Core Tech Stack
+![n8n](https://img.shields.io/badge/n8n%201.x-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite%205-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Python](https://img.shields.io/badge/Python%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js%2022-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+
+### 🧠 AI & RAG Infrastructure
+![Qdrant](https://img.shields.io/badge/Qdrant%20Cloud-FF4F64?style=flat-square&logo=qdrant&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini%203-Pro%20Preview-4285F4?style=flat-square&logo=google&logoColor=white)
+![Together AI](https://img.shields.io/badge/Together%20AI-M2--BERT-FF6B6B?style=flat-square)
+![Qwen](https://img.shields.io/badge/Qwen%203-Coder%2014B-7C3AED?style=flat-square)
+![Unsloth](https://img.shields.io/badge/Unsloth-Training-orange?style=flat-square)
+
+### 🚀 Hosting
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-
-### AI & RAG Infrastructure
-![Qdrant](https://img.shields.io/badge/Qdrant-FF4F64?style=flat-square&logo=qdrant&logoColor=white)
-![Together AI](https://img.shields.io/badge/Together%20AI-FF6B6B?style=flat-square)
-![M2-BERT](https://img.shields.io/badge/M2--BERT--32k-768dim-blue?style=flat-square)
-![Gemini](https://img.shields.io/badge/Gemini%202.0-Flash-4285F4?style=flat-square&logo=google&logoColor=white)
-![Unsloth](https://img.shields.io/badge/Unsloth-Fine--Tuning-orange?style=flat-square)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
 > **131,648 n8n workflows** — the world's largest open-source n8n workflow dataset.  
-> **36,166 vectors** in Qdrant Cloud for RAG-powered workflow retrieval.
-> **21,925 cleaned examples** ready for fine-tuning.
+> **36,166 vectors** in Qdrant Cloud for RAG-powered workflow retrieval.  
+> **🔥 Custom Qwen 3 Coder 14B** fine-tuning in progress with 21,925 cleaned examples.
 
 ---
 
